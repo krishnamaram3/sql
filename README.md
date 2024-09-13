@@ -25,15 +25,15 @@ FLUSH PRIVILEGES;
 ```
 * Step 5: Create table and insert records
 ```
-CREATE TABLE stones_info(
+CREATE TABLE cloud_stones(
                 stone_id VARCHAR(255) PRIMARY KEY,
                 cloud_provider VARCHAR(25),
-				cloud_account VARCHAR(25),
+		cloud_account VARCHAR(25),
                 region VARCHAR(50),
                 stone_status VARCHAR(25)
                 );
 ```
 ```
 				
-insert into stones_info(stone_id, cloud_provider, cloud_account, region, stone_status) values ('CSITAWS0001', 'AWS', '1234567891', 'us-east-1', 'provisioned');
+insert into cloud_stones(stone_id, cloud_provider, cloud_account, region, stone_status) values ('CSITAWS0001', 'AWS', '1234567891', 'us-east-1', 'provisioned');
 ```
